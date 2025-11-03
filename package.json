@@ -1,0 +1,26 @@
+{
+  "name": "arrowfunction",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcoscaldas/ArrowFunctionTypeScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcoscaldas/ArrowFunctionTypeScript/issues"
+  },
+  "homepage": "https://github.com/marcoscaldas/ArrowFunctionTypeScript#readme",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^24.10.0",
+    "@types/prompt-sync": "^4.2.3",
+    "prompt-sync": "^4.2.0",
+    "ts-node": "^10.9.2"
+  }
+}
