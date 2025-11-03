@@ -40,3 +40,26 @@ let tarefas: Tarefa[] = carregarTarefas();
 let contador = tarefas.length > 0 ? Math.max(...tarefas.map(t => t.id)) + 1 : 1;
 
 
+//CRUD INICIO
+
+//ADICIONAR
+const adicionarTarefa = (): void =>{
+    const descricao = prompt("Digite a decrição da tarefa: ");
+    if(!descricao.trim()){
+        console.log('Descrição inválida!');
+        return;
+    }
+
+    const novaTarefa: Tarefa = {
+        id: contador++,
+        descricao,
+        concluida: false
+    }
+
+    tarefas.push(novaTarefa);
+
+    salvarTarefas(tarefas);
+    console.log(`Tarefa  "${descricao}" adicionada! `);
+}
+adicionarTarefa();
+
